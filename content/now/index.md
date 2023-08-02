@@ -1,7 +1,5 @@
 ---
 layout: layouts/base.njk
-eleventyNavigation:
-  hide: true
 ---
 Thanks for visiting my website.
 
