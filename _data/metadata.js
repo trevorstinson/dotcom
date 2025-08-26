@@ -7,5 +7,6 @@ export default {
 		name: "Trevor Stinson",
 		email: "rarest-dobro0y@icloud.com",
 		url: "https://trevorstinson.com/about",
+		mastodon: "https://indieweb.social/@trevorstinson",
 	},
 };
