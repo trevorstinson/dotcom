@@ -189,9 +189,6 @@ pre:not([class*="language-"]) {
 	word-break: normal;
 	overflow-x: auto;
 }
-code {
-	word-break: break-all;
-}
 
 /* Header */
 header {
