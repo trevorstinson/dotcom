@@ -8,6 +8,8 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
+import { default as EleventyPluginRobotsTxt } from "eleventy-plugin-robotstxt";
+
 import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
@@ -130,6 +132,16 @@ export default async function (eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+	// robots.txt
+	const eleventyPluginRobotsTxtOptions = {
+		frontMatterOverrides: { layout: null },
+		shouldBlockAIRobots: true,
+	};
+	eleventyConfig.addPlugin(
+		EleventyPluginRobotsTxt,
+		eleventyPluginRobotsTxtOptions
+	);
 }
 
 export const config = {
