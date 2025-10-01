@@ -128,6 +128,27 @@ header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }
 
+footer {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+
+	& a[href],
+	& a[href]:visited {
+		background-color: var(--text-color-link);
+		border-radius: 1.5rem;
+		color: var(--background-color);
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			background-color: var(--text-color-link-active);
+			color: var(--background-color);
+		}
+	}
+}
+
 #skip-link {
 	text-decoration: none;
 	background: var(--background-color);
