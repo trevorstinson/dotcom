@@ -130,8 +130,7 @@ header {
 
 footer {
 	display: flex;
-	gap: 3rem;
-	justify-content: center;
+	justify-content: space-evenly;
 
 	& a[href],
 	& a[href]:visited {
