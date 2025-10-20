@@ -142,8 +142,19 @@ footer {
 
 		&:hover,
 		&:active {
-			background-color: var(--text-color-link-active);
-			color: var(--background-color);
+			color: #fff;
+
+			.github& {
+				background-color: #08872b;
+			}
+
+			.mastodon& {
+				background-color: #563acc;
+			}
+
+			.linkedin& {
+				background-color: #0a66c2;
+			}
 		}
 	}
 }
